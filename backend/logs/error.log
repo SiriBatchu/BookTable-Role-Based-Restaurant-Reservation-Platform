@@ -1,0 +1,712 @@
+ERROR 2025-05-08 16:17:32,525 log 73508 6204764160 Internal Server Error: /api/restaurants/73/
+Traceback (most recent call last):
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/restaurants/views.py", line 180, in get
+    if restaurant and restaurant.manager_id.id == request.user.id:
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'id'
+ERROR 2025-05-08 16:17:34,522 log 73508 6171111424 Internal Server Error: /api/restaurants/73/
+Traceback (most recent call last):
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/vedantmehta/SJSU/Academics/Spring 25/CMPE 202 Software Systems Engineering/team-project-20202-gvp/backend/restaurants/views.py", line 180, in get
+    if restaurant and restaurant.manager_id.id == request.user.id:
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'id'
+ERROR 2025-05-12 00:37:17,670 log 51112 6155202560 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 668, in upload_fileobj
+    future = manager.upload(
+        fileobj=Fileobj,
+    ...<3 lines>...
+        subscribers=subscribers,
+    )
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/manager.py", line 337, in upload
+    self._validate_if_bucket_supported(bucket)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/manager.py", line 506, in _validate_if_bucket_supported
+    match = pattern.match(bucket)
+TypeError: expected string or bytes-like object, got 'NoneType'
+ERROR 2025-05-12 00:37:32,107 log 51112 6155202560 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 668, in upload_fileobj
+    future = manager.upload(
+        fileobj=Fileobj,
+    ...<3 lines>...
+        subscribers=subscribers,
+    )
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/manager.py", line 337, in upload
+    self._validate_if_bucket_supported(bucket)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/manager.py", line 506, in _validate_if_bucket_supported
+    match = pattern.match(bucket)
+TypeError: expected string or bytes-like object, got 'NoneType'
+ERROR 2025-05-12 01:18:48,622 log 53264 6196785152 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 668, in upload_fileobj
+    future = manager.upload(
+        fileobj=Fileobj,
+    ...<3 lines>...
+        subscribers=subscribers,
+    )
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/manager.py", line 337, in upload
+    self._validate_if_bucket_supported(bucket)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/manager.py", line 506, in _validate_if_bucket_supported
+    match = pattern.match(bucket)
+TypeError: expected string or bytes-like object, got 'NoneType'
+ERROR 2025-05-12 01:34:42,128 log 53976 6197719040 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the PutObject operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+ERROR 2025-05-12 03:54:14,632 log 53976 6198292480 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the PutObject operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+ERROR 2025-05-12 03:58:57,875 log 56251 6162558976 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the PutObject operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+ERROR 2025-05-12 04:03:02,230 log 56359 6205960192 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the PutObject operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+ERROR 2025-05-12 04:03:21,137 log 56359 6222786560 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (SignatureDoesNotMatch) when calling the PutObject operation: The request signature we calculated does not match the signature you provided. Check your key and signing method.
+ERROR 2025-05-12 04:12:34,406 log 56985 6138081280 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::047719653115:user/booktable is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::cmpe202booktable/restaurants/93/photos/20250512_041234_4c4aef2b-c479-4276-b2d0-6869f297207f.jpeg" because no identity-based policy allows the s3:PutObject action
+ERROR 2025-05-12 04:12:47,354 log 56985 6154907648 Internal Server Error: /api/restaurants/create/
+Traceback (most recent call last):
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/views.py", line 34, in perform_create
+    serializer.save(manager_id=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 206, in create
+    photo_url = upload_to_s3(photo, photos_folder)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/restaurants/serializers.py", line 37, in upload_to_s3
+    s3_client.upload_fileobj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        image_file,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        }
+        ^
+    )
+    ^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/boto3/s3/inject.py", line 675, in upload_fileobj
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 111, in result
+    return self._coordinator.result()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/futures.py", line 272, in result
+    raise self._exception
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 142, in __call__
+    return self._execute_main(kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/tasks.py", line 165, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/s3transfer/upload.py", line 796, in _main
+    client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 570, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/roshinijoga/Desktop/team-project-20202-gvp/backend/venv/lib/python3.13/site-packages/botocore/client.py", line 1031, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::047719653115:user/booktable is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::cmpe202booktable/restaurants/94/photos/20250512_041247_3659789b-bdc5-4b45-846a-52aa6a00812b.jpeg" because no identity-based policy allows the s3:PutObject action
