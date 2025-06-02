@@ -4,7 +4,7 @@
 
 A full-stack restaurant reservation system with a Django backend and a Next.js frontend.
 
-![FIG1](frontend/public/ui1.jpeg)
+![FIG1](frontend/UI.png)
 
 
 ## Table of Contents
